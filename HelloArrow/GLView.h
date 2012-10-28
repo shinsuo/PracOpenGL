@@ -13,11 +13,16 @@
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
 
+#import "IRenderingEngine.h"
+
 @interface GLView : UIView
 {
-    EAGLContext *m_context;
+    EAGLContext         *m_context;
+    IRenderingEngine    *m_renderingEngine;
+    float               m_timestamp;
 }
 
-- (void)drawView;
+- (void)drawView:(CADisplayLink *)displayLink;
+- (void)didRotate:(NSNotification *)notification;
 
 @end

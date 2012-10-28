@@ -19,4 +19,14 @@ enum DeviceOrientation {
     DeviceOrientationFaceDown,
 };
 
+struct IRenderingEngine *CreateRender1();
+
+struct IRenderingEngine {
+    virtual void Initialize(int width,int height) = 0;
+    virtual void Render() const = 0;
+    virtual void UpdateAniamtion(float timeStep) = 0;
+    virtual void OnRotate(DeviceOrientation newOrientation) = 0;
+    virtual ~IRenderingEngine(){}
+};
+
 #endif
