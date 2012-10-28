@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GLView.h"
 
 @interface SXAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    GLView *m_view;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

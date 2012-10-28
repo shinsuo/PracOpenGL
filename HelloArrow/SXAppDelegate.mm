@@ -12,13 +12,19 @@
 
 - (void)dealloc
 {
+    [m_view release];
     [_window release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    
+    self.window = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
+    m_view = [[GLView alloc] initWithFrame:screenBounds];
+    
+    [self.window addSubview:m_view];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

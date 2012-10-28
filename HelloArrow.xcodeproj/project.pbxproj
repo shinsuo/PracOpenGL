@@ -16,6 +16,9 @@
 		75E7D680163D63EF008672CE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D67F163D63EF008672CE /* Default.png */; };
 		75E7D682163D63EF008672CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D681163D63EF008672CE /* Default@2x.png */; };
 		75E7D684163D63EF008672CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D683163D63EF008672CE /* Default-568h@2x.png */; };
+		75E7D68C163D6413008672CE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D68A163D6413008672CE /* GLKit.framework */; };
+		75E7D68D163D6413008672CE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D68B163D6413008672CE /* OpenGLES.framework */; };
+		75E7D690163D64A8008672CE /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D68F163D64A8008672CE /* GLView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		75E7D67F163D63EF008672CE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		75E7D681163D63EF008672CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		75E7D683163D63EF008672CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		75E7D68A163D6413008672CE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		75E7D68B163D6413008672CE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		75E7D68E163D64A8008672CE /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		75E7D68F163D64A8008672CE /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E7D68C163D6413008672CE /* GLKit.framework in Frameworks */,
+				75E7D68D163D6413008672CE /* OpenGLES.framework in Frameworks */,
 				75E7D66E163D63EF008672CE /* UIKit.framework in Frameworks */,
 				75E7D670163D63EF008672CE /* Foundation.framework in Frameworks */,
 				75E7D672163D63EF008672CE /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +60,8 @@
 		75E7D65E163D63EF008672CE = {
 			isa = PBXGroup;
 			children = (
+				75E7D68A163D6413008672CE /* GLKit.framework */,
+				75E7D68B163D6413008672CE /* OpenGLES.framework */,
 				75E7D673163D63EF008672CE /* HelloArrow */,
 				75E7D66C163D63EF008672CE /* Frameworks */,
 				75E7D66A163D63EF008672CE /* Products */,
@@ -80,6 +91,8 @@
 			children = (
 				75E7D67C163D63EF008672CE /* SXAppDelegate.h */,
 				75E7D67D163D63EF008672CE /* SXAppDelegate.m */,
+				75E7D68E163D64A8008672CE /* GLView.h */,
+				75E7D68F163D64A8008672CE /* GLView.mm */,
 				75E7D674163D63EF008672CE /* Supporting Files */,
 			);
 			path = HelloArrow;
@@ -167,6 +180,7 @@
 			files = (
 				75E7D67A163D63EF008672CE /* main.m in Sources */,
 				75E7D67E163D63EF008672CE /* SXAppDelegate.m in Sources */,
+				75E7D690163D64A8008672CE /* GLView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,10 +248,13 @@
 		75E7D688163D63EF008672CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloArrow/HelloArrow-Prefix.pch";
 				INFOPLIST_FILE = "HelloArrow/HelloArrow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -245,10 +262,13 @@
 		75E7D689163D63EF008672CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloArrow/HelloArrow-Prefix.pch";
 				INFOPLIST_FILE = "HelloArrow/HelloArrow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
