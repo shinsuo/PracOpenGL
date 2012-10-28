@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75E7D66E163D63EF008672CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D66D163D63EF008672CE /* UIKit.framework */; };
+		75E7D670163D63EF008672CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D66F163D63EF008672CE /* Foundation.framework */; };
+		75E7D672163D63EF008672CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D671163D63EF008672CE /* CoreGraphics.framework */; };
+		75E7D678163D63EF008672CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D676163D63EF008672CE /* InfoPlist.strings */; };
+		75E7D67A163D63EF008672CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D679163D63EF008672CE /* main.m */; };
+		75E7D67E163D63EF008672CE /* SXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D67D163D63EF008672CE /* SXAppDelegate.m */; };
+		75E7D680163D63EF008672CE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D67F163D63EF008672CE /* Default.png */; };
+		75E7D682163D63EF008672CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D681163D63EF008672CE /* Default@2x.png */; };
+		75E7D684163D63EF008672CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D683163D63EF008672CE /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75E7D669163D63EF008672CE /* HelloArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E7D66D163D63EF008672CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75E7D66F163D63EF008672CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75E7D671163D63EF008672CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75E7D675163D63EF008672CE /* HelloArrow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloArrow-Info.plist"; sourceTree = "<group>"; };
+		75E7D677163D63EF008672CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75E7D679163D63EF008672CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75E7D67B163D63EF008672CE /* HelloArrow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloArrow-Prefix.pch"; sourceTree = "<group>"; };
+		75E7D67C163D63EF008672CE /* SXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXAppDelegate.h; sourceTree = "<group>"; };
+		75E7D67D163D63EF008672CE /* SXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXAppDelegate.m; sourceTree = "<group>"; };
+		75E7D67F163D63EF008672CE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		75E7D681163D63EF008672CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		75E7D683163D63EF008672CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75E7D666163D63EF008672CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E7D66E163D63EF008672CE /* UIKit.framework in Frameworks */,
+				75E7D670163D63EF008672CE /* Foundation.framework in Frameworks */,
+				75E7D672163D63EF008672CE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75E7D65E163D63EF008672CE = {
+			isa = PBXGroup;
+			children = (
+				75E7D673163D63EF008672CE /* HelloArrow */,
+				75E7D66C163D63EF008672CE /* Frameworks */,
+				75E7D66A163D63EF008672CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75E7D66A163D63EF008672CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75E7D669163D63EF008672CE /* HelloArrow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75E7D66C163D63EF008672CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75E7D66D163D63EF008672CE /* UIKit.framework */,
+				75E7D66F163D63EF008672CE /* Foundation.framework */,
+				75E7D671163D63EF008672CE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75E7D673163D63EF008672CE /* HelloArrow */ = {
+			isa = PBXGroup;
+			children = (
+				75E7D67C163D63EF008672CE /* SXAppDelegate.h */,
+				75E7D67D163D63EF008672CE /* SXAppDelegate.m */,
+				75E7D674163D63EF008672CE /* Supporting Files */,
+			);
+			path = HelloArrow;
+			sourceTree = "<group>";
+		};
+		75E7D674163D63EF008672CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75E7D675163D63EF008672CE /* HelloArrow-Info.plist */,
+				75E7D676163D63EF008672CE /* InfoPlist.strings */,
+				75E7D679163D63EF008672CE /* main.m */,
+				75E7D67B163D63EF008672CE /* HelloArrow-Prefix.pch */,
+				75E7D67F163D63EF008672CE /* Default.png */,
+				75E7D681163D63EF008672CE /* Default@2x.png */,
+				75E7D683163D63EF008672CE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75E7D668163D63EF008672CE /* HelloArrow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E7D687163D63EF008672CE /* Build configuration list for PBXNativeTarget "HelloArrow" */;
+			buildPhases = (
+				75E7D665163D63EF008672CE /* Sources */,
+				75E7D666163D63EF008672CE /* Frameworks */,
+				75E7D667163D63EF008672CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloArrow;
+			productName = HelloArrow;
+			productReference = 75E7D669163D63EF008672CE /* HelloArrow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75E7D660163D63EF008672CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SX;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Indie Developer";
+			};
+			buildConfigurationList = 75E7D663163D63EF008672CE /* Build configuration list for PBXProject "HelloArrow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75E7D65E163D63EF008672CE;
+			productRefGroup = 75E7D66A163D63EF008672CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75E7D668163D63EF008672CE /* HelloArrow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75E7D667163D63EF008672CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E7D678163D63EF008672CE /* InfoPlist.strings in Resources */,
+				75E7D680163D63EF008672CE /* Default.png in Resources */,
+				75E7D682163D63EF008672CE /* Default@2x.png in Resources */,
+				75E7D684163D63EF008672CE /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75E7D665163D63EF008672CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E7D67A163D63EF008672CE /* main.m in Sources */,
+				75E7D67E163D63EF008672CE /* SXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75E7D676163D63EF008672CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E7D677163D63EF008672CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75E7D685163D63EF008672CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75E7D686163D63EF008672CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75E7D688163D63EF008672CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloArrow/HelloArrow-Prefix.pch";
+				INFOPLIST_FILE = "HelloArrow/HelloArrow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75E7D689163D63EF008672CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloArrow/HelloArrow-Prefix.pch";
+				INFOPLIST_FILE = "HelloArrow/HelloArrow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75E7D663163D63EF008672CE /* Build configuration list for PBXProject "HelloArrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E7D685163D63EF008672CE /* Debug */,
+				75E7D686163D63EF008672CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E7D687163D63EF008672CE /* Build configuration list for PBXNativeTarget "HelloArrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E7D688163D63EF008672CE /* Debug */,
+				75E7D689163D63EF008672CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75E7D660163D63EF008672CE /* Project object */;
+}
