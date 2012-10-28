@@ -9,6 +9,14 @@
 #ifndef HelloArrow_IRenderingEngine_h
 #define HelloArrow_IRenderingEngine_h
 
-
+enum DeviceOrientation {
+    DeviceOrientationUnknown,
+    DeviceOrientationPortrait,
+    DeviceOrientationPortraitUpsideDown,
+    DeviceOrientationLandscapeLeft,
+    DeviceOrientationLandscapeRight,
+    DeviceOrientationFaceUp,
+    DeviceOrientationFaceDown,
+};
 
 #endif

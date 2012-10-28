@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7519A2D5163D88D30077AF0D /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D68F163D64A8008672CE /* GLView.mm */; };
+		7519A2E5163D8E660077AF0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7519A2E4163D8E660077AF0D /* QuartzCore.framework */; };
 		75E7D66E163D63EF008672CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D66D163D63EF008672CE /* UIKit.framework */; };
 		75E7D670163D63EF008672CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D66F163D63EF008672CE /* Foundation.framework */; };
 		75E7D672163D63EF008672CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D671163D63EF008672CE /* CoreGraphics.framework */; };
 		75E7D678163D63EF008672CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D676163D63EF008672CE /* InfoPlist.strings */; };
 		75E7D67A163D63EF008672CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D679163D63EF008672CE /* main.m */; };
-		75E7D67E163D63EF008672CE /* SXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D67D163D63EF008672CE /* SXAppDelegate.m */; };
+		75E7D67E163D63EF008672CE /* SXAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D67D163D63EF008672CE /* SXAppDelegate.mm */; };
 		75E7D680163D63EF008672CE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D67F163D63EF008672CE /* Default.png */; };
 		75E7D682163D63EF008672CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D681163D63EF008672CE /* Default@2x.png */; };
 		75E7D684163D63EF008672CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D683163D63EF008672CE /* Default-568h@2x.png */; };
-		75E7D68C163D6413008672CE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D68A163D6413008672CE /* GLKit.framework */; };
 		75E7D68D163D6413008672CE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D68B163D6413008672CE /* OpenGLES.framework */; };
-		75E7D690163D64A8008672CE /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D68F163D64A8008672CE /* GLView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7519A2E4163D8E660077AF0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7519A2E6163DC1490077AF0D /* IRenderingEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRenderingEngine.h; sourceTree = "<group>"; };
 		75E7D669163D63EF008672CE /* HelloArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E7D66D163D63EF008672CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75E7D66F163D63EF008672CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,14 +33,13 @@
 		75E7D679163D63EF008672CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75E7D67B163D63EF008672CE /* HelloArrow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloArrow-Prefix.pch"; sourceTree = "<group>"; };
 		75E7D67C163D63EF008672CE /* SXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXAppDelegate.h; sourceTree = "<group>"; };
-		75E7D67D163D63EF008672CE /* SXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXAppDelegate.m; sourceTree = "<group>"; };
+		75E7D67D163D63EF008672CE /* SXAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SXAppDelegate.mm; sourceTree = "<group>"; };
 		75E7D67F163D63EF008672CE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		75E7D681163D63EF008672CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		75E7D683163D63EF008672CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		75E7D68A163D6413008672CE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		75E7D68B163D6413008672CE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		75E7D68E163D64A8008672CE /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
-		75E7D68F163D64A8008672CE /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		75E7D68F163D64A8008672CE /* GLView.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = GLView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E7D68C163D6413008672CE /* GLKit.framework in Frameworks */,
+				7519A2E5163D8E660077AF0D /* QuartzCore.framework in Frameworks */,
 				75E7D68D163D6413008672CE /* OpenGLES.framework in Frameworks */,
 				75E7D66E163D63EF008672CE /* UIKit.framework in Frameworks */,
 				75E7D670163D63EF008672CE /* Foundation.framework in Frameworks */,
@@ -60,7 +61,7 @@
 		75E7D65E163D63EF008672CE = {
 			isa = PBXGroup;
 			children = (
-				75E7D68A163D6413008672CE /* GLKit.framework */,
+				7519A2E4163D8E660077AF0D /* QuartzCore.framework */,
 				75E7D68B163D6413008672CE /* OpenGLES.framework */,
 				75E7D673163D63EF008672CE /* HelloArrow */,
 				75E7D66C163D63EF008672CE /* Frameworks */,
@@ -90,9 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				75E7D67C163D63EF008672CE /* SXAppDelegate.h */,
-				75E7D67D163D63EF008672CE /* SXAppDelegate.m */,
+				75E7D67D163D63EF008672CE /* SXAppDelegate.mm */,
 				75E7D68E163D64A8008672CE /* GLView.h */,
 				75E7D68F163D64A8008672CE /* GLView.mm */,
+				7519A2E6163DC1490077AF0D /* IRenderingEngine.h */,
 				75E7D674163D63EF008672CE /* Supporting Files */,
 			);
 			path = HelloArrow;
@@ -179,8 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75E7D67A163D63EF008672CE /* main.m in Sources */,
-				75E7D67E163D63EF008672CE /* SXAppDelegate.m in Sources */,
-				75E7D690163D64A8008672CE /* GLView.mm in Sources */,
+				75E7D67E163D63EF008672CE /* SXAppDelegate.mm in Sources */,
+				7519A2D5163D88D30077AF0D /* GLView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +250,7 @@
 		75E7D688163D63EF008672CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloArrow/HelloArrow-Prefix.pch";
 				INFOPLIST_FILE = "HelloArrow/HelloArrow-Info.plist";
@@ -262,7 +264,7 @@
 		75E7D689163D63EF008672CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloArrow/HelloArrow-Prefix.pch";
 				INFOPLIST_FILE = "HelloArrow/HelloArrow-Info.plist";
@@ -292,6 +294,7 @@
 				75E7D689163D63EF008672CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
