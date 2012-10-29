@@ -32,4 +32,6 @@ public:
     
 };
 
+IRenderingEngine *CreateRender1();
+
 #endif /* defined(__HelloArrow__IRenderingEngine1__) */

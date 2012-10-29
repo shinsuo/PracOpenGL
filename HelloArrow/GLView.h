@@ -44,7 +44,7 @@ static inline Triangle3D Triangle3DMake(Vertex3D v1,Vertex3D v2,Vertex3D v3)
 @interface GLView : UIView
 {
     EAGLContext         *m_context;
-//    IRenderingEngine    *m_renderingEngine;
+    IRenderingEngine    *m_renderingEngine;
     float               m_timestamp;
 }
 
