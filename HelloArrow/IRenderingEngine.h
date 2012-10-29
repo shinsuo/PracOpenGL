@@ -9,7 +9,6 @@
 #ifndef __HelloArrow__IRenderingEngine1__
 #define __HelloArrow__IRenderingEngine1__
 
-#include <iostream>
 
 enum DeviceOrientation {
     DeviceOrientationUnknown,
@@ -33,5 +32,6 @@ public:
 };
 
 IRenderingEngine *CreateRender1();
+IRenderingEngine *CreateRender2();
 
 #endif /* defined(__HelloArrow__IRenderingEngine1__) */

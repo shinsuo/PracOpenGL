@@ -8,6 +8,8 @@
 
 #import "GLView.h"
 
+const bool ForceES1 = false;
+
 @implementation GLView
 
 - (id)initWithFrame:(CGRect)frame
@@ -19,6 +21,7 @@
         CAEAGLLayer *eaglLayer = (CAEAGLLayer *)super.layer;
         eaglLayer.opaque = YES;
         
+        /*OpenGL ES 1.0 Version
         m_context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
         
         if (!m_context || ![EAGLContext setCurrentContext:m_context]) {
@@ -27,6 +30,32 @@
         }
         
         m_renderingEngine = CreateRender1();
+        //*/
+        
+        //*OpenGL ES 2.0 Version
+        EAGLRenderingAPI api = kEAGLRenderingAPIOpenGLES2;
+        m_context = [[EAGLContext alloc] initWithAPI:api];
+        
+        if (!m_context || ForceES1) {
+            api = kEAGLRenderingAPIOpenGLES1;
+            m_context = [[EAGLContext alloc] initWithAPI:api];
+        }
+        
+        if (!m_context || ![EAGLContext setCurrentContext:m_context]) {
+            [self release];
+            return nil;
+        }
+        
+        if (api == kEAGLRenderingAPIOpenGLES1) {
+            m_renderingEngine = CreateRender1();
+        }else{
+            m_renderingEngine = CreateRender2();
+        }
+        
+        //*/
+        
+        
+        
         [m_context renderbufferStorage:GL_RENDERBUFFER fromDrawable:eaglLayer];
         
         m_renderingEngine->Initialize(CGRectGetWidth(frame), CGRectGetHeight(frame));

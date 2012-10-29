@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7519A2D5163D88D30077AF0D /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D68F163D64A8008672CE /* GLView.mm */; };
 		7519A2E5163D8E660077AF0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7519A2E4163D8E660077AF0D /* QuartzCore.framework */; };
+		75D75495163F21D900EB92DE /* IRenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75D75493163F21D900EB92DE /* IRenderingEngine2.cpp */; };
 		75E7D66E163D63EF008672CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D66D163D63EF008672CE /* UIKit.framework */; };
 		75E7D670163D63EF008672CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D66F163D63EF008672CE /* Foundation.framework */; };
 		75E7D672163D63EF008672CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D671163D63EF008672CE /* CoreGraphics.framework */; };
@@ -24,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		7519A2E4163D8E660077AF0D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75D75493163F21D900EB92DE /* IRenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IRenderingEngine2.cpp; sourceTree = "<group>"; };
+		75D75497163F220F00EB92DE /* Simple.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.vert; sourceTree = "<group>"; };
+		75D75499163F221F00EB92DE /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
 		75E7D669163D63EF008672CE /* HelloArrow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloArrow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E7D66D163D63EF008672CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		75E7D66F163D63EF008672CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75D75494163F21D900EB92DE /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				75D75497163F220F00EB92DE /* Simple.vert */,
+				75D75499163F221F00EB92DE /* Simple.frag */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
 		75E7D65E163D63EF008672CE = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +107,12 @@
 		75E7D673163D63EF008672CE /* HelloArrow */ = {
 			isa = PBXGroup;
 			children = (
+				75D75494163F21D900EB92DE /* shader */,
 				75E7D67C163D63EF008672CE /* SXAppDelegate.h */,
 				75E7D67D163D63EF008672CE /* SXAppDelegate.mm */,
 				75E7D68E163D64A8008672CE /* GLView.h */,
 				75E7D68F163D64A8008672CE /* GLView.mm */,
+				75D75493163F21D900EB92DE /* IRenderingEngine2.cpp */,
 				B9FAC353163E30A3000C629F /* IRenderingEngine1.cpp */,
 				B9FAC389163E3770000C629F /* IRenderingEngine.h */,
 				75E7D674163D63EF008672CE /* Supporting Files */,
@@ -189,6 +204,7 @@
 				75E7D67E163D63EF008672CE /* SXAppDelegate.mm in Sources */,
 				7519A2D5163D88D30077AF0D /* GLView.mm in Sources */,
 				B9FAC355163E30A3000C629F /* IRenderingEngine1.cpp in Sources */,
+				75D75495163F21D900EB92DE /* IRenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
