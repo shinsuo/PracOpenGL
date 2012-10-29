@@ -1,13 +1,15 @@
 //
-//  IRenderingEngine.h
+//  IRenderingEngine1.h
 //  HelloArrow
 //
-//  Created by shin on 12-10-28.
+//  Created by shin on 12-10-29.
 //  Copyright (c) 2012年 Indie Developer. All rights reserved.
 //
 
-#ifndef HelloArrow_IRenderingEngine_h
-#define HelloArrow_IRenderingEngine_h
+#ifndef __HelloArrow__IRenderingEngine1__
+#define __HelloArrow__IRenderingEngine1__
+
+#include <iostream>
 
 enum DeviceOrientation {
     DeviceOrientationUnknown,
@@ -19,14 +21,15 @@ enum DeviceOrientation {
     DeviceOrientationFaceDown,
 };
 
-struct IRenderingEngine *CreateRender1();
-
-struct IRenderingEngine {
+class IRenderingEngine {
+    
+public:
     virtual void Initialize(int width,int height) = 0;
     virtual void Render() const = 0;
     virtual void UpdateAniamtion(float timeStep) = 0;
     virtual void OnRotate(DeviceOrientation newOrientation) = 0;
     virtual ~IRenderingEngine(){}
+    
 };
 
-#endif
+#endif /* defined(__HelloArrow__IRenderingEngine1__) */

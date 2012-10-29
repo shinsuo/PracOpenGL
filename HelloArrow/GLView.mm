@@ -67,9 +67,25 @@
 
 - (void)drawView
 {
+
     glClearColor(0.5f, 0.5f, 0.5f, 1);
     glClear(GL_COLOR_BUFFER_BIT);
+
+/*
+    Vertex3D vertex1 = Vertex3DMake (0.0, 1.0, -3.0);
+    Vertex3D vertex2 = Vertex3DMake (1.0, 0.0, -3.0);
+    Vertex3D vertex3 = Vertex3DMake (-1.0, 0.0, -3.0);
+    Triangle3D triangle = Triangle3DMake (vertex1, vertex2, vertex3);
     
+    glLoadIdentity ();
+    glClearColor (0.7, 0.7, 0.7, 1.0);
+    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+    glEnableClientState (GL_VERTEX_ARRAY );
+    glColor4f(1.0,0.0, 0.0, 1.0);
+    glVertexPointer (3, GL_FLOAT , 0, &triangle );
+    glDrawArrays (GL_TRIANGLES , 0, 9);
+    glDisableClientState (GL_VERTEX_ARRAY );
+  */  
     [m_context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
 
