@@ -23,7 +23,7 @@
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     
     self.window = [[[UIWindow alloc] initWithFrame:screenBounds] autorelease];
-    m_view = [[GLView alloc] initWithFrame:CGRectMake(10, 30, 300, 300)];
+    m_view = [[GLView alloc] initWithFrame:CGRectMake(10, 10, 300, 460)];
     
     [self.window addSubview:m_view];
     // Override point for customization after application launch.
