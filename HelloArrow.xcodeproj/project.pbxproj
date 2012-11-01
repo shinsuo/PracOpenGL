@@ -12,13 +12,14 @@
 		75E7D672163D63EF008672CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D671163D63EF008672CE /* CoreGraphics.framework */; };
 		75E7D678163D63EF008672CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D676163D63EF008672CE /* InfoPlist.strings */; };
 		75E7D67A163D63EF008672CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D679163D63EF008672CE /* main.m */; };
-		75E7D67E163D63EF008672CE /* SXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D67D163D63EF008672CE /* SXAppDelegate.m */; };
 		75E7D680163D63EF008672CE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D67F163D63EF008672CE /* Default.png */; };
 		75E7D682163D63EF008672CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D681163D63EF008672CE /* Default@2x.png */; };
 		75E7D684163D63EF008672CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E7D683163D63EF008672CE /* Default-568h@2x.png */; };
 		75E7D68C163D6413008672CE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D68A163D6413008672CE /* GLKit.framework */; };
 		75E7D68D163D6413008672CE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E7D68B163D6413008672CE /* OpenGLES.framework */; };
 		75E7D690163D64A8008672CE /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D68F163D64A8008672CE /* GLView.mm */; };
+		B9036486164224680049DF02 /* SXAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9036485164224680049DF02 /* SXAppDelegate.mm */; };
+		B9036488164224890049DF02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9036487164224890049DF02 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,6 @@
 		75E7D679163D63EF008672CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75E7D67B163D63EF008672CE /* HelloArrow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloArrow-Prefix.pch"; sourceTree = "<group>"; };
 		75E7D67C163D63EF008672CE /* SXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXAppDelegate.h; sourceTree = "<group>"; };
-		75E7D67D163D63EF008672CE /* SXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXAppDelegate.m; sourceTree = "<group>"; };
 		75E7D67F163D63EF008672CE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		75E7D681163D63EF008672CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		75E7D683163D63EF008672CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -39,6 +39,8 @@
 		75E7D68B163D6413008672CE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		75E7D68E163D64A8008672CE /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
 		75E7D68F163D64A8008672CE /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		B9036485164224680049DF02 /* SXAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SXAppDelegate.mm; sourceTree = "<group>"; };
+		B9036487164224890049DF02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9036488164224890049DF02 /* QuartzCore.framework in Frameworks */,
 				75E7D68C163D6413008672CE /* GLKit.framework in Frameworks */,
 				75E7D68D163D6413008672CE /* OpenGLES.framework in Frameworks */,
 				75E7D66E163D63EF008672CE /* UIKit.framework in Frameworks */,
@@ -60,6 +63,7 @@
 		75E7D65E163D63EF008672CE = {
 			isa = PBXGroup;
 			children = (
+				B9036487164224890049DF02 /* QuartzCore.framework */,
 				75E7D68A163D6413008672CE /* GLKit.framework */,
 				75E7D68B163D6413008672CE /* OpenGLES.framework */,
 				75E7D673163D63EF008672CE /* HelloArrow */,
@@ -90,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				75E7D67C163D63EF008672CE /* SXAppDelegate.h */,
-				75E7D67D163D63EF008672CE /* SXAppDelegate.m */,
+				B9036485164224680049DF02 /* SXAppDelegate.mm */,
 				75E7D68E163D64A8008672CE /* GLView.h */,
 				75E7D68F163D64A8008672CE /* GLView.mm */,
 				75E7D674163D63EF008672CE /* Supporting Files */,
@@ -179,8 +183,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75E7D67A163D63EF008672CE /* main.m in Sources */,
-				75E7D67E163D63EF008672CE /* SXAppDelegate.m in Sources */,
 				75E7D690163D64A8008672CE /* GLView.mm in Sources */,
+				B9036486164224680049DF02 /* SXAppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +296,7 @@
 				75E7D689163D63EF008672CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
